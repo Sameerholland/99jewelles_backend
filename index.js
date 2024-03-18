@@ -91,7 +91,7 @@ server.use(session({
 
 main().catch((err) => {console.log(err)})
 async function main(){
-   await mongoose.connect('mongodb+srv://vk4886341:wBcpyViLtePwRL0p@cluster0.hdczzkg.mongodb.net/?retryWrites=true&w=majority')
+   await mongoose.connect('mongodb+srv://<MONGODB USERNAME>:<MONGODB PASSWORD>@cluster0.hdczzkg.mongodb.net/?retryWrites=true&w=majority')
    console.log('Database Connected')
 }
 server.listen(port,()=>{
